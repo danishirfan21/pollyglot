@@ -1,0 +1,115 @@
+.translation-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.input-section,
+.output-section {
+  margin-bottom: 20px;
+}
+
+.input-title,
+.output-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.language-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-options input[type="radio"] {
+  display: none;
+}
+
+.language-options label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.language-options label img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.translate-button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.translate-button:hover {
+  background-color: #e85749;
+}
+
+.language-options input[type="radio"] {
+  display: inline-block; /* Show the radio buttons */
+  width: auto; /* Adjust width */
+  appearance: none; /* Hide the default appearance */
+  -webkit-appearance: none; /* Hide the default appearance for Safari */
+  border: 1px solid #cccccc; /* Add border */
+  border-radius: 50%; /* Make them circular */
+  background-color: #ffffff; /* White background */
+  margin-right: 5px; /* Add margin for spacing */
+}
+
+.language-options input[type="radio"]:checked {
+  background-color: #ff6f61; /* Change background color when checked */
+}
+
+.language-options label {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  cursor: pointer;
+}
+
+.language-options label img {
+  width: auto; /* Let the width adjust proportionally */
+  height: 20px; /* Set a specific height */
+  margin-right: 5px;
+}
+
+.language-options label {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  cursor: pointer;
+}
+
+.language-options input[type="radio"] {
+  display: inline-block; /* Show the radio buttons */
+  width: auto; /* Adjust width */
+  appearance: none; /* Hide the default appearance */
+  -webkit-appearance: none; /* Hide the default appearance for Safari */
+  border: 1px solid #cccccc; /* Add border */
+  border-radius: 50%; /* Make them circular */
+  background-color: #ffffff; /* White background */
+  margin-right: 10px; /* Add margin for spacing */
+}
+
+.language-options input[type="radio"]:checked {
+  background-color: #ff6f61; /* Change background color when checked */
+}
+
+.language-options label img {
+  width: auto; /* Let the width adjust proportionally */
+  height: 20px; /* Set a specific height */
+  margin-right: 5px;
+}
