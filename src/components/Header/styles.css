@@ -1,67 +1,20 @@
-/* .header {
-  background-image: url("../../../public/assets/worldmap.png");
-}
-
-.title {
-    color: #32CD32;
-    font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-
-.subtitle {
-    color: #FFFFFF;
-} */
-
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: #f0f0f0;
-  color: #333;
-  box-sizing: border-box;
-  /* background-image: url("../../../public/assets/worldmap.png"); */
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 2px solid #0056b3;
 }
 
-.header-content {
-  display: flex;
-  gap: 1rem;
+.header-title {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo {
-  width: 5rem;
+  width: 150px;
   height: auto;
-  margin-right: 1rem;
-}
-
-.text-container {
-  padding: 0.5rem 1rem;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 0.5rem;
-}
-
-.subtitle {
-  font-size: 1rem;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 1.2rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-  }
+  margin-right: 10px;
 }

@@ -1,56 +1,79 @@
-body {
-  background-color: #f0f0f0;
+* {
+  box-sizing: border-box;
 }
 
 .translation-container {
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.translation-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .input-section,
 .output-section {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .input-title,
 .output-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #333333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
-.textarea {
+textarea {
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #cccccc;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   font-size: 16px;
-  resize: none;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
 }
 
-.language-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
-
-.translate-button {
-  padding: 10px 20px;
-  background-color: #ff6f61;
-  color: white;
+button {
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 6px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.translate-button:hover {
-  background-color: #e85749;
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
+button:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+.output-section img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
