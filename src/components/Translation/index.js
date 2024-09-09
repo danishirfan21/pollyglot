@@ -6,9 +6,15 @@ export default function Translation() {
   const [isInitialState, setIsInitialState] = useState(true);
   const [textToTranslate, setTextToTranslate] = useState('');
   const [translatedText, setTranslatedText] = useState('');
+  const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!apiKey) {
+      alert('Please add your OpenAI API key in .env file');
+      return;
+    }
 
     if (isInitialState && textToTranslate === '') {
       alert('Please enter text to translate');
@@ -29,7 +35,7 @@ export default function Translation() {
 
     const openai = new OpenAI({
       dangerouslyAllowBrowser: true,
-      apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+      apiKey,
     });
 
     const messages = [
